@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muistio">
+    <meta name="author" content="Lotta Höglund">
+    <title>Muistio</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles/layout.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Muistio</h1>
+        <!-- Create new note -->
+        <button type="button" class="newNoteButton" onclick="openNoteEditor()">
+            <span class="material-icons">note_add</span>
+        </button>
+    </header>
+
+    <!-- Notes -->
+    <div id="wall"></div>
+
+    <!-- Settings -->
+    <div id="settings"></div>
+  
+    <!-- Settings and current time -->
+    <footer>
+        <button type="button" class="openSettingsButton" onclick="openSettings()">
+            <span class="material-icons">settings</span>
+        </button>
+        <p id="date"></p>
+    </footer>
+
+    <!-- Script-->
+    <script src="script/app.js"></script>
+
+</body>
+</html>
+
